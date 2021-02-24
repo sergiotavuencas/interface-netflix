@@ -8,9 +8,10 @@
     <title>Netflix</title>
 </head>
 <body>
+    <!-- Todos os elementos HTML são renderizados como se fossem caixas -->
     <header>
         <div class="container">
-            <h2>NETFLIX</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="">Início</a>
                 <a href="">Séries</a>
@@ -19,5 +20,25 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">THE MANDALORIAN</h3>
+                <p class="descricao">A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira Ordem.</p>
+
+                <!-- Colocando os botões em outra div, ímpede que os elementos possuam todos os atributos do pai já que ela não é uma filha direta -->
+                <div class="botoes">
+                    <!-- Aparelhos portateís ás vezes precisam de uma identificação para a função do botão, para não renderizar com uma propriedade diferente, então utiliza-se role="" para identifcar essa função -->
+                    <button role="button" class="botoes">
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botoes">
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
