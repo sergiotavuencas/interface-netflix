@@ -1,3 +1,66 @@
+:root {
+    /* Declaração de variáveis */
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza: #AAA;
+    --branco: #fff;
+}
+
+/* *(reset) - Refere-se a todo o documento sendo utilizando */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Limita o tamanho dos elementos ao tamanho da caixa */
+}
+
+/* base */
 body {
-    background-color: blue;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}
+
+header .container {
+    display: flex; /* flex(flex-box) -  Alinha os elementos da caixa na mesma linha, ao invés de separar cada tag por linha */
+    align-items: center;
+    justify-content: space-between; /* space-between - Cria um espaçamento entre as tags*/
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/the-madalorian.jpg');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Sempre segue a direção do flex-direction */
+    align-items: flex-start; /* Elementos começam a partir da direção escolhida, ou seja, coluna começa da esquerda pra direita e linha de cima para baixo */
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
