@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/086ca90201.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Netflix</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Todos os elementos HTML são renderizados como se fossem caixas -->
     <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="">Início</a>
-                <a href="">Séries</a>
-                <a href="">Filmes</a>
-                <a href="">Documentários</a>
-            </nav>
-        </div>
+      <div class="container">
+        <h2 class="logo">NETFLIX</h2>
+        <nav>
+          <a href="">Início</a>
+          <a href="">Séries</a>
+          <a href="">Filmes</a>
+          <a href="">Documentários</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">THE MANDALORIAN</h3>
-                <p class="descricao">A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira Ordem.</p>
+      <div class="filme-principal">
+        <div class="container">
+          <h3 class="titulo">THE MANDALORIAN</h3>
+          <p class="descricao">
+            A saga de um guerreiro solitário, que também é um mercenário e
+            pistoleiro, viajando pelos territórios esquecidos e marginais do
+            espaço, logo após a queda do Império e antes da criação da temida
+            Primeira Ordem.
+          </p>
 
-                <!-- Colocando os botões em outra div, ímpede que os elementos possuam todos os atributos do pai já que ela não é uma filha direta -->
-                <div class="botoes">
-                    <!-- Aparelhos portateís ás vezes precisam de uma identificação para a função do botão, para não renderizar com uma propriedade diferente, então utiliza-se role="" para identifcar essa função -->
-                    <button role="button" class="botoes">
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botoes">
-                        MAIS INFORMAÇÕES
-                    </button>
-                </div>
-            </div>
+          <!-- Colocando os botões em outra div, ímpede que os elementos possuam todos os atributos do pai já que ela não é uma filha direta -->
+          <div class="botoes">
+            <!-- Aparelhos portateís ás vezes precisam de uma identificação para a função do botão, para não renderizar com uma propriedade diferente, então utiliza-se role="" para identifcar essa função -->
+            <button role="button" class="botao">
+              <i class="fas fa-play"></i>
+              ASSISTIR AGORA
+            </button>
+            <button role="button" class="botao">
+              <i class="fas fa-info"></i>
+              MAIS INFORMAÇÕES
+            </button>
+          </div>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
