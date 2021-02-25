@@ -17,6 +17,7 @@ $ git clone <https://github.com/sergiotavuencas/interface-netflix>
 
 ## Executando
 Abra o repositório no Visual Studio Code, e com o botão direito do mouse em cima de "index.html", selecione "Open With Live Server".
+Ou abra o arquivo "index.html" no repositório.
 
 ## Desktop
 ![Desktop](https://github.com/sergiotavuencas/interface-netflix/blob/screenshots/Desktop%2001.png?raw=true "Versão Desktop")
